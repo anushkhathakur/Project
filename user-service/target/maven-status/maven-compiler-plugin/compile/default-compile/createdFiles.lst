@@ -1,0 +1,9 @@
+com\medicure\appointment\service\PersonService.class
+com\medicure\appointment\controller\LoginController.class
+com\medicure\appointment\domain\DoctorRepository.class
+com\medicure\appointment\domain\PersonRepository.class
+com\medicure\appointment\AppointmentApplication.class
+com\medicure\appointment\domain\SlotRepository.class
+com\medicure\appointment\model\Person.class
+com\medicure\appointment\model\Doctor.class
+com\medicure\appointment\model\Slot.class

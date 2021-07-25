@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Pixogram</title>
+<script type="text/javascript"
+	src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+<link
+	href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css"
+	rel="stylesheet" id="bootstrap-css">
+<script
+	src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<div class="" id="loginModal">
+					<div class="container bg-secondary">
+						<span class="container"></span>
+						<div class="media border p-3 bg-info">
+							<img src="/images/logo.png" alt="Logo"
+								class="mr-3 mt-3 rounded-circle" style="width: 60px;">
+							<div class="media-body">
+								<h4>
+									Pixogram 
+								</h4>
+							</div>
+						</div>
+					</div>
+					<div class="modal-header">
+						<h3>Pixogram</h3>
+						<br>
+					</div>
+
+					<div class="modal-body">
+						<div class="well">
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#login" data-toggle="tab">Login</a></li>
+								<li><a href="#create" data-toggle="tab">Create Account</a></li>
+							</ul>
+							<div id="myTabContent" class="tab-content">
+								<div class="tab-pane active in" id="login">
+									<form id="form" th:action="@{/users/verifyUser}" th:object="${user}"
+										class="form-horizontal" method="get">
+										<fieldset>
+											<div id="legend">
+												<legend class="">Login</legend>
+											</div>
+											<div class="control-group">
+												<label class="control-label" for="userName">User Name</label>
+												<div class="controls">
+													<input th:field="*{userName}" type="text" id="userName"
+														name="userName" 
+														class="input-xlarge">
+												</div>
+											</div>
+
+											<div class="control-group">
+												<label class="control-label" for="password">Password</label>
+												<div class="controls">
+													<input type="password" id="password" name="password"
+														placeholder="" class="input-xlarge">
+												</div>
+											</div>
+											<div class="control-group">
+												<div class="controls">
+													<button class="btn btn-success">Login</button>
+												</div>
+											</div>
+										</fieldset>
+									</form>
+								</div>
+								<div class="tab-pane fade" id="create">
+									<form id="tab">
+										<label>Username</label> <input type="text" value=""
+											class="input-xlarge"> <label>Password</label> <input
+											type="text" value="" class="input-xlarge"> <label>Confirm
+											Password</label> <input type="text" value="" class="input-xlarge">
+										<label>Email</label> <input type="text" value=""
+											class="input-xlarge">
+										<div>
+											<button class="btn btn-primary">Create Account</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
