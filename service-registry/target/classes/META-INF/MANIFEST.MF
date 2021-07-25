@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: service-registry
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: 000A6R744
+Implementation-Vendor-Id: com.pixogram
+Build-Jdk: 1.8.0_121
+Implementation-URL: https://spring.io/projects/spring-boot/service-reg
+ istry
+Created-By: Maven Integration for Eclipse
+
